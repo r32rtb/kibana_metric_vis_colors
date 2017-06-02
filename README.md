@@ -6,12 +6,13 @@ This visualization plugin is like the default Metric plugin, improved to be colo
 
 ## Installation Steps
 
-You can install this plugin in Kibana 5.4 by doing the following in your home directory ($KIBANA_HOME is generally /opt/kibana) :
+You can install this plugin in Kibana 5.4 by doing the following in your home directory ($KIBANA_HOME is generally /usr/share/kibana) :
 
 ```
-git clone https://github.com/r32rtb/kibana_metric_vis_colors.git
-zip -r kibana_metric_vis_colors-5.4.0.zip kibana_metric_vis_colors
-$KIBANA_HOME/bin/kibana-plugin install file:///$HOME_DIRECTORY/kibana_metric_vis_colors-5.4.0.zip
+git clone https://github.com/r32rtb/kibana_metric_vis_colors.git ./metric_vis_colors/kibana/kibana_metric_vis_colors
+cd metric_vis_colors
+zip -r kibana_metric_vis_colors-5.4.0.zip kibana 
+$KIBANA_HOME/bin/kibana-plugin install file:///$HOME_DIRECTORY/metric_vis_colors/kibana_metric_vis_colors-5.4.0.zip
 ```
 
 ## How to use
