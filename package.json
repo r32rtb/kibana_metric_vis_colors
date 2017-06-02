@@ -1,4 +1,7 @@
 {
   "name": "metric_vis_colors",
-  "version": "5.4.0"
+  "version": "5.4.0",
+  "kibana": {
+    "version": "5.4.0"
+  }
 }
