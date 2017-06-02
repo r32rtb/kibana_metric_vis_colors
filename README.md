@@ -10,8 +10,8 @@ You can install this plugin in Kibana 5.4 by doing the following in your home di
 
 ```
 git clone https://github.com/r32rtb/kibana_metric_vis_colors.git
-zip -r kibana_metric_vis_colors kibana_metric_vis_colors
-$KIBANA_HOME/bin/kibana-plugin install metric-vis-colors file:///$HOME_DIRECTORY/kibana_metric_vis_colors.zip
+zip -r kibana_metric_vis_colors-5.4.0.zip kibana_metric_vis_colors
+$KIBANA_HOME/bin/kibana-plugin install file:///$HOME_DIRECTORY/kibana_metric_vis_colors-5.4.0.zip
 ```
 
 ## How to use
