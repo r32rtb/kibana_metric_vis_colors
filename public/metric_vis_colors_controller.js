@@ -1,11 +1,11 @@
-define(function (require) {
-  var _ = require('lodash');
-  // get the kibana/metric_vis_colors module, and make sure that it requires the "kibana" module if it
-  // didn't already
-  const module = require('ui/modules').get('kibana/metric_vis_colors', ['kibana']);
+import _ from 'lodash';
+import uiModules from 'ui/modules';
+// get the kibana/aggregate_metrics_reducer module, and make sure that it requires the "kibana" module if it
+// didn't already
+const module = uiModules.get('kibana/metric_vis_colors', ['kibana']);
 
-  module.controller('KbnMetricVisController', function ($scope, Private) {
-    const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
+module.controller('KbnMetricVisController', function ($scope, Private) {
+	const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
 
     const metrics = $scope.metrics = [];
 
@@ -35,5 +35,4 @@ define(function (require) {
         $scope.processTableGroups(tabifyAggResponse($scope.vis, resp));
       }
     });
-  });
 });
